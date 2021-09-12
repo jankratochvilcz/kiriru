@@ -7,46 +7,46 @@ import buranIllustration from "../../assets/illustrations/noun_spaceshuttle_1675
 import Level from "../molecules/Level";
 
 const Levels = () => {
-  return (
-    <div>
-      <Level
-        achievmentTitle="Sputnik 1"
-        achievmentLink="https://en.wikipedia.org/wiki/Sputnik_1"
-        illustrationPath={sputnikIllustration}
-        letters={["О", "Е", "А", "И", "Н", "Т"]}
-      />
-      <Level
-        achievmentTitle="Laika"
-        achievmentLink="https://en.wikipedia.org/wiki/Laika"
-        illustrationPath={laikaIllustration}
-        letters={["С", "Л", "В", "Р", "К", "М"]}
-      />
-      <Level
-        achievmentTitle="Yuri Gagarin"
-        achievmentLink="https://en.wikipedia.org/wiki/Yuri_Gagarin"
-        illustrationPath={gagarinIllustration}
-        letters={["Д", "П", "Ы", "У", "Б", "Я"]}
-      />
-      <Level
-        achievmentTitle="Valentina Tereshkova"
-        achievmentLink="https://en.wikipedia.org/wiki/Valentina_Tereshkova"
-        illustrationPath={tereshkovaIllustration}
-        letters={["Ь", "Г", "З", "Ч", "Й", "Ж"]}
-      />
-      <Level
-        achievmentTitle="Salyut 1"
-        achievmentLink="https://en.wikipedia.org/wiki/Salyut_1"
-        illustrationPath={salyutIllustration}
-        letters={["Х", "Ш", "Ю", "Ц", "Э", "Щ"]}
-      />
-      <Level
-        achievmentTitle="Buran"
-        achievmentLink="https://en.wikipedia.org/wiki/Buran_(spacecraft)"
-        illustrationPath={buranIllustration}
-        letters={["Ф", "Ё", "Ъ"]}
-      />
-    </div>
-  );
+    return (
+        <div>
+            <Level
+                achievmentTitle="Sputnik 1"
+                achievmentLink="https://en.wikipedia.org/wiki/Sputnik_1"
+                illustrationPath={sputnikIllustration}
+                letters={["О", "Е", "А", "И", "Н", "Т"]}
+            />
+            <Level
+                achievmentTitle="Laika"
+                achievmentLink="https://en.wikipedia.org/wiki/Laika"
+                illustrationPath={laikaIllustration}
+                letters={["С", "Л", "В", "Р", "К", "М"]}
+            />
+            <Level
+                achievmentTitle="Yuri Gagarin"
+                achievmentLink="https://en.wikipedia.org/wiki/Yuri_Gagarin"
+                illustrationPath={gagarinIllustration}
+                letters={["Д", "П", "Ы", "У", "Б", "Я"]}
+            />
+            <Level
+                achievmentTitle="Valentina Tereshkova"
+                achievmentLink="https://en.wikipedia.org/wiki/Valentina_Tereshkova"
+                illustrationPath={tereshkovaIllustration}
+                letters={["Ь", "Г", "З", "Ч", "Й", "Ж"]}
+            />
+            <Level
+                achievmentTitle="Salyut 1"
+                achievmentLink="https://en.wikipedia.org/wiki/Salyut_1"
+                illustrationPath={salyutIllustration}
+                letters={["Х", "Ш", "Ю", "Ц", "Э", "Щ"]}
+            />
+            <Level
+                achievmentTitle="Buran"
+                achievmentLink="https://en.wikipedia.org/wiki/Buran_(spacecraft)"
+                illustrationPath={buranIllustration}
+                letters={["Ф", "Ё", "Ъ"]}
+            />
+        </div>
+    );
 };
 
 export default Levels;
