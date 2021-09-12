@@ -4,13 +4,18 @@ import "./Card.scss";
 type CardProps = {
     text: string;
     itallic?: boolean;
+    className?: string;
 };
 
-const Card = ({ text, itallic }: CardProps) => (
+const Card = ({ text, itallic, className }: CardProps) => (
     <div
-        className={classNames("letter-card", {
-            itallic: !!itallic,
-        })}
+        className={classNames(
+            "letter-card",
+            {
+                itallic: !!itallic,
+            },
+            className
+        )}
     >
         <span>{text}</span>
     </div>

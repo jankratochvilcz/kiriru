@@ -10,6 +10,7 @@ import { cyrillicAlphabet } from "../../models/cyrillicAlphabet";
 import { Impression, ImpressionType } from "../../models/impression";
 import Button from "../atoms/Button";
 import Card from "../molecules/Card";
+import PracticeProgress from "../organisms/PracticeProgress";
 import "./Practice.scss";
 
 type PracticeProps = {
@@ -22,6 +23,7 @@ const Practice = ({ letters }: PracticeProps) => {
 
     const [currentImpression, setCurrentImpression] = useState<Impression>();
     const [isRevealed, setIsRevealed] = useState(false);
+    const [initialImpressionCount, setInitialImpressionCount] = useState(0);
 
     useEffect(() => {
         const lettersToPractice = cyrillicAlphabet.filter((x) =>
@@ -41,6 +43,7 @@ const Practice = ({ letters }: PracticeProps) => {
 
         const shuffled = shuffleArray(letterToPracticeDuplicated);
 
+        setInitialImpressionCount(shuffled.length);
         setCurrentImpression(shuffled[0]);
         setRemainingImpressions(shuffled.slice(1));
     }, [letters]);
@@ -53,7 +56,6 @@ const Practice = ({ letters }: PracticeProps) => {
         const nextImpression = nextRemainingImpressions[0];
         const updatedRemainingImpressions = nextRemainingImpressions.slice(1);
 
-        console.log(updatedRemainingImpressions);
         setIsRevealed(false);
         setCurrentImpression(nextImpression);
         setRemainingImpressions(updatedRemainingImpressions);
@@ -82,8 +84,6 @@ const Practice = ({ letters }: PracticeProps) => {
                 x.letter === currentImpression.letter
         );
 
-        console.log(alreadyHasAnotherImpressionInstance);
-
         const updatedRemainingImpressions: Impression[] =
             alreadyHasAnotherImpressionInstance
                 ? [...remainingImpressions, currentImpression]
@@ -92,8 +92,6 @@ const Practice = ({ letters }: PracticeProps) => {
                       currentImpression,
                       currentImpression,
                   ];
-
-        console.log(updatedRemainingImpressions);
 
         const shuffledRemainingImpressions = shuffleArray(
             updatedRemainingImpressions
@@ -106,46 +104,57 @@ const Practice = ({ letters }: PracticeProps) => {
         return <></>;
     }
 
-    console.log(remainingImpressions);
+    const percentage =
+        initialImpressionCount -
+        (remainingImpressions?.length ?? 0) / initialImpressionCount;
+    console.log(percentage);
 
-    if (!isRevealed) {
-        return (
-            <div className="practice-root">
+    return (
+        <div className="practice-root">
+            <div className="card-with-progress">
+                <PracticeProgress
+                    className="practice-progress"
+                    percentage={percentage}
+                />
                 <Card
-                    text={getHiddenStateText(currentImpression)}
+                    className="card"
+                    text={
+                        !isRevealed
+                            ? getHiddenStateText(currentImpression)
+                            : getRevealedStateText(currentImpression)
+                    }
                     itallic={
-                        currentImpression.impressionType === "transcription"
+                        !isRevealed
+                            ? currentImpression.impressionType ===
+                              "transcription"
+                            : currentImpression.impressionType !==
+                              "transcription"
                     }
                 />
-                <div className="instruction">
-                    {getInstruction(currentImpression)}
-                </div>
+            </div>
+            <div className="instruction">
+                {!isRevealed
+                    ? getInstruction(currentImpression)
+                    : "Did you get it right?"}
+            </div>
+            {!isRevealed ? (
                 <Button
                     title="Reveal answer"
                     size="large"
                     kind="primary"
                     onClick={() => setIsRevealed(true)}
                 />
-            </div>
-        );
-    }
-
-    return (
-        <div className="practice-root">
-            <Card
-                text={getRevealedStateText(currentImpression)}
-                itallic={currentImpression.impressionType !== "transcription"}
-            />
-            <div className="instruction">Did you get it right?</div>
-            <div className="result-choices">
-                <Button title="No" size="large" onClick={answeredWrongly} />
-                <Button
-                    title="Yes"
-                    size="large"
-                    kind="primary"
-                    onClick={answeredCorrectly}
-                />
-            </div>
+            ) : (
+                <div className="result-choices">
+                    <Button title="No" size="large" onClick={answeredWrongly} />
+                    <Button
+                        title="Yes"
+                        size="large"
+                        kind="primary"
+                        onClick={answeredCorrectly}
+                    />
+                </div>
+            )}
         </div>
     );
 };

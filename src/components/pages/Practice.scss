@@ -17,3 +17,23 @@
 .result-choices > * {
     margin: 0 8px;
 }
+
+.card-with-progress {
+    position: relative;
+    width: 372px;
+    height: 372px;
+
+    .practice-progress,
+    .card {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .card {
+        position: absolute;
+        z-index: 10;
+        top: 61px;
+        left: 61px;
+    }
+}
