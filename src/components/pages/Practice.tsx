@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { shuffleArray } from "../../functions/array";
 import {
     getInstruction,
