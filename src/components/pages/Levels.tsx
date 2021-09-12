@@ -26,13 +26,13 @@ const Levels = () => {
                 achievmentTitle="Yuri Gagarin"
                 achievmentLink="https://en.wikipedia.org/wiki/Yuri_Gagarin"
                 illustrationPath={gagarinIllustration}
-                letters={["Д", "П", "Ы", "У", "Б", "Я"]}
+                letters={["Д", "П", "ы", "У", "Б", "Я"]}
             />
             <Level
                 achievmentTitle="Valentina Tereshkova"
                 achievmentLink="https://en.wikipedia.org/wiki/Valentina_Tereshkova"
                 illustrationPath={tereshkovaIllustration}
-                letters={["Ь", "Г", "З", "Ч", "Й", "Ж"]}
+                letters={["ь", "Г", "З", "Ч", "Й", "Ж"]}
             />
             <Level
                 achievmentTitle="Salyut 1"
@@ -44,10 +44,10 @@ const Levels = () => {
                 achievmentTitle="Buran"
                 achievmentLink="https://en.wikipedia.org/wiki/Buran_(spacecraft)"
                 illustrationPath={buranIllustration}
-                letters={["Ф", "Ё", "Ъ"]}
+                letters={["Ф", "Ё", "ъ"]}
             />
             <Level
-                achievmentTitle="Поздравляю!"
+                achievmentTitle="Поехали!"
                 achievmentLink="https://translate.google.com/?sl=ru&tl=en&text=%D0%9F%D0%BE%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E!&op=translate"
                 illustrationPath={russiaIllustration}
                 letters={[

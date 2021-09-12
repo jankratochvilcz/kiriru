@@ -1,13 +1,16 @@
 import { Impression } from "../models/impression";
 
+const getUpperCase = (impression: Impression) =>
+    impression.letter.upperCase ?? "";
+
 export const getHiddenStateText = (impression: Impression) =>
     impression.impressionType === "cyrillic"
-        ? `${impression.letter.upperCase}${impression.letter.lowerCase}`
+        ? `${getUpperCase(impression)}${impression.letter.lowerCase}`
         : impression.letter.transliteration;
 
 export const getRevealedStateText = (impression: Impression) =>
     impression.impressionType === "transcription"
-        ? `${impression.letter.upperCase}${impression.letter.lowerCase}`
+        ? `${getUpperCase(impression)}${impression.letter.lowerCase}`
         : impression.letter.transliteration;
 
 export const getInstruction = (impression: Impression) =>

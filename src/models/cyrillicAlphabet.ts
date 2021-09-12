@@ -137,17 +137,14 @@ export const cyrillicAlphabet: CyrillicLetter[] = [
         transliteration: "shch",
     },
     {
-        upperCase: "Ъ",
         lowerCase: "ъ",
         transliteration: '" (hard sign)',
     },
     {
-        upperCase: "Ы",
         lowerCase: "ы",
         transliteration: "y",
     },
     {
-        upperCase: "Ь",
         lowerCase: "ь",
         transliteration: "' (soft sign)",
     },

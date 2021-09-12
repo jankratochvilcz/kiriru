@@ -30,7 +30,7 @@ const Practice = ({ letters }: PracticeProps) => {
 
     useEffect(() => {
         const lettersToPractice = cyrillicAlphabet.filter((x) =>
-            letters.some((y) => y === x.upperCase)
+            letters.some((y) => y === x.upperCase || y === x.lowerCase)
         );
 
         const letterToPracticeDuplicated = [

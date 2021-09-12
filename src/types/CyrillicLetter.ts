@@ -1,5 +1,5 @@
 export type CyrillicLetter = {
-    upperCase: string;
+    upperCase?: string;
     lowerCase: string;
     transliteration: string;
 };
