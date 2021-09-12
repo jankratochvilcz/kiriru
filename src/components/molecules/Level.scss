@@ -80,3 +80,19 @@
         }
     }
 }
+
+@media all and (max-width: $mobile-breakpoint) {
+    .level-root {
+        padding: 0;
+
+        .achievment {
+            display: none;
+        }
+
+        .center-column {
+            .illustration {
+                margin: 0 32px;
+            }
+        }
+    }
+}

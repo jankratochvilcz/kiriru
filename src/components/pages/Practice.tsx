@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import { shuffleArray } from "../../functions/array";
 import {
     getInstruction,
@@ -26,6 +26,8 @@ const Practice = ({ letters }: PracticeProps) => {
     const [initialImpressionCount, setInitialImpressionCount] = useState(0);
     const [sputinkSuccess, setSputnikSuccess] = useState(false);
 
+    const history = useHistory();
+
     useEffect(() => {
         const lettersToPractice = cyrillicAlphabet.filter((x) =>
             letters.some((y) => y === x.upperCase)
@@ -51,7 +53,7 @@ const Practice = ({ letters }: PracticeProps) => {
 
     const goToNextImpression = (nextRemainingImpressions: Impression[]) => {
         if (!nextRemainingImpressions || nextRemainingImpressions.length < 1) {
-            return <Redirect to="/" />;
+            history.push("/recap");
         }
 
         const nextImpression = nextRemainingImpressions[0];

@@ -30,7 +30,7 @@ const Recap = () => {
     return (
         <div>
             <h1>Nice work, keep it up! 🙌</h1>
-            <Gif gif={gif} width={400} />
+            <Gif gif={gif} width={360} />
             <Link to="/">
                 <Button
                     size="large"
