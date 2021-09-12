@@ -37,3 +37,9 @@
         left: 61px;
     }
 }
+
+@media all and (max-width: $mobile-breakpoint) {
+    .practice-root {
+        margin-top: 48px;
+    }
+}
