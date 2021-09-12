@@ -2,7 +2,8 @@
 
 .footer-root {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-end;
     font-size: small;
     color: $gray-mid;
     margin-top: 64px;
@@ -15,4 +16,9 @@
     div {
         margin: 0 6px;
     }
+}
+
+.buymeacoffee {
+    height: 30px !important;
+    margin-bottom: 12px;
 }
