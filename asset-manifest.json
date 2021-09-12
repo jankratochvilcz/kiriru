@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kiriru/static/css/main.520fb35e.chunk.css",
+    "main.css": "/kiriru/static/css/main.a89c38dd.chunk.css",
     "main.js": "/kiriru/static/js/main.fd142e74.chunk.js",
     "main.js.map": "/kiriru/static/js/main.fd142e74.chunk.js.map",
     "runtime-main.js": "/kiriru/static/js/runtime-main.af0cbd21.js",
@@ -10,7 +10,7 @@
     "static/js/3.150fe99d.chunk.js": "/kiriru/static/js/3.150fe99d.chunk.js",
     "static/js/3.150fe99d.chunk.js.map": "/kiriru/static/js/3.150fe99d.chunk.js.map",
     "index.html": "/kiriru/index.html",
-    "static/css/main.520fb35e.chunk.css.map": "/kiriru/static/css/main.520fb35e.chunk.css.map",
+    "static/css/main.a89c38dd.chunk.css.map": "/kiriru/static/css/main.a89c38dd.chunk.css.map",
     "static/js/2.25a4ff03.chunk.js.LICENSE.txt": "/kiriru/static/js/2.25a4ff03.chunk.js.LICENSE.txt",
     "static/media/logo.79740181.png": "/kiriru/static/media/logo.79740181.png",
     "static/media/noun_Astronaut_3437785.4fbff19f.svg": "/kiriru/static/media/noun_Astronaut_3437785.4fbff19f.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.af0cbd21.js",
     "static/js/2.25a4ff03.chunk.js",
-    "static/css/main.520fb35e.chunk.css",
+    "static/css/main.a89c38dd.chunk.css",
     "static/js/main.fd142e74.chunk.js"
   ]
 }
