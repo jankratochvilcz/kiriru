@@ -1,0 +1,80 @@
+@import "../../styles/colors.scss";
+
+.level-root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 64px;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $gray-light;
+        cursor: pointer;
+    }
+
+    .achievment {
+        font-style: italic;
+        width: 164px;
+        text-decoration: none;
+        text-align: right;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .letters {
+        width: 164px;
+        text-align: left;
+
+        span {
+            padding: 0 6px;
+        }
+    }
+
+    &:first-child {
+        .center-column {
+            .line:first-of-type {
+                visibility: hidden;
+            }
+        }
+    }
+
+    &:last-child {
+        .center-column {
+            .line:last-of-type {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .center-column {
+        height: 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .line {
+            height: 32px;
+            width: 1px;
+            background: $russia-red;
+        }
+
+        .illustration {
+            width: 64px;
+            height: 64px;
+            background: $russia-red;
+            border-radius: 64px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 64px;
+    
+            img {
+                width: 36px;
+                margin: 0 auto;
+            }
+
+        }
+    }
+}

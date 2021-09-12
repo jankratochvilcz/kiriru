@@ -1,0 +1,13 @@
+@import "../../styles/colors.scss";
+
+.footer-root {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    color: $gray-mid;
+    margin-top: 64px;
+
+    div {
+        margin: 0 6px;
+    }
+}
