@@ -146,9 +146,14 @@ const Practice = ({ letters }: PracticeProps) => {
                 />
             ) : (
                 <div className="result-choices">
-                    <Button title="No" size="large" onClick={answeredWrongly} />
                     <Button
-                        title="Yes"
+                        title="No [n]"
+                        size="large"
+                        onClick={answeredWrongly}
+                        hotkey="n"
+                    />
+                    <Button
+                        title="Yes ↵"
                         size="large"
                         kind="primary"
                         onClick={answeredCorrectly}
