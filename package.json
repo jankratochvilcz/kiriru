@@ -2,7 +2,6 @@
     "name": "kiriru",
     "version": "0.1.0",
     "private": true,
-    "homepage": "/kiriru",
     "dependencies": {
         "@giphy/js-fetch-api": "^4.1.2",
         "@giphy/react-components": "^5.3.1",
