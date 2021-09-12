@@ -113,7 +113,6 @@ const Practice = ({ letters }: PracticeProps) => {
     const percentage =
         initialImpressionCount -
         (remainingImpressions?.length ?? 0) / initialImpressionCount;
-    console.log(percentage);
 
     return (
         <div className="practice-root">
