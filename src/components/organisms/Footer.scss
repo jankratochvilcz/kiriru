@@ -6,6 +6,11 @@
     font-size: small;
     color: $gray-mid;
     margin-top: 64px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 12px;
+    background: white;
 
     div {
         margin: 0 6px;

@@ -27,6 +27,8 @@
     .letters {
         width: 164px;
         text-align: left;
+        text-overflow: ellipsis;
+        overflow: clip;
 
         span {
             padding: 0 6px;

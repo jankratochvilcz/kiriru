@@ -4,6 +4,7 @@ import gagarinIllustration from "../../assets/illustrations/noun_Astronaut_34379
 import tereshkovaIllustration from "../../assets/illustrations/noun_Astronaut_3437785.svg";
 import salyutIllustration from "../../assets/illustrations/noun_space station_2677019.svg";
 import buranIllustration from "../../assets/illustrations/noun_spaceshuttle_1675163.svg";
+import russiaIllustration from "../../assets/illustrations/noun_Communism_2356924.svg";
 import Level from "../molecules/Level";
 
 const Levels = () => {
@@ -44,6 +45,46 @@ const Levels = () => {
                 achievmentLink="https://en.wikipedia.org/wiki/Buran_(spacecraft)"
                 illustrationPath={buranIllustration}
                 letters={["Ф", "Ё", "Ъ"]}
+            />
+            <Level
+                achievmentTitle="Поздравляю!"
+                achievmentLink="https://translate.google.com/?sl=ru&tl=en&text=%D0%9F%D0%BE%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E!&op=translate"
+                illustrationPath={russiaIllustration}
+                letters={[
+                    "О",
+                    "Е",
+                    "А",
+                    "И",
+                    "Н",
+                    "Т",
+                    "С",
+                    "Л",
+                    "В",
+                    "Р",
+                    "К",
+                    "М",
+                    "Д",
+                    "П",
+                    "Ы",
+                    "У",
+                    "Б",
+                    "Я",
+                    "Ь",
+                    "Г",
+                    "З",
+                    "Ч",
+                    "Й",
+                    "Ж",
+                    "Х",
+                    "Ш",
+                    "Ю",
+                    "Ц",
+                    "Э",
+                    "Щ",
+                    "Ф",
+                    "Ё",
+                    "Ъ",
+                ]}
             />
         </div>
     );

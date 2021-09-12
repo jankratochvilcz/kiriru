@@ -6,7 +6,8 @@ const Footer = () => (
             by <a href="https://janjan.xyz">Jan</a>
         </div>
         <div>
-            source on <a href="github.com/jankratochvilcz/kiriru/">GitHub</a>
+            attributions and source on{" "}
+            <a href="https://github.com/jankratochvilcz/kiriru/">GitHub</a>
         </div>
     </div>
 );

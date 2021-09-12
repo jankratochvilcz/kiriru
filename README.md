@@ -11,3 +11,4 @@ A tiny React app for learning Russina cyrillic.
 -   space station by Eucalyp from the Noun Project
 -   dog astronaut by Pixel Bazaar from the Noun Project
 -   Sputnik by Katrine Kolström from the Noun Project
+-   Star by Dmitry Vasiliev from the Noun Project
