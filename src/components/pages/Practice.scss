@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+@import "../../styles/measurements.scss";
+
+.practice-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.instruction {
+    color: $gray-dark;
+    margin-top: 96px;
+    margin-bottom: 24px;
+}
+
+.result-choices > * {
+    margin: 0 8px;
+}

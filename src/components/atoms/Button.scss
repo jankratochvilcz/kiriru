@@ -1,0 +1,32 @@
+@import "../../styles/colors.scss";
+@import "../../styles/measurements.scss";
+
+.button {
+    padding: 8px 16px;
+    background: $gray-light;
+    border: 1px solid $gray-mid;
+    border-radius: $border-radius;
+    min-width: 96px;
+
+    &:hover {
+        background: $russia-red;
+        cursor: pointer;
+        color: $gray-light;
+        border-color: $russia-red;
+    }
+}
+
+.large {
+    font-size: large;
+}
+
+.primary {
+    background: $russia-red;
+    color: $gray-light;
+    border-color: $russia-red-darker;
+
+    &:hover {
+        background: $russia-red-darker;
+        border-color: $russia-red-darker;
+    }
+}
