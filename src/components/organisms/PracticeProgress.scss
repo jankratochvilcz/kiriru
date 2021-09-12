@@ -5,3 +5,7 @@
 .rocket {
     transition: margin 1.5s, transform 1s;
 }
+
+.success {
+    filter: brightness(1) sepia(1) hue-rotate(60deg) saturate(5);
+}

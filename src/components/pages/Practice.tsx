@@ -24,6 +24,7 @@ const Practice = ({ letters }: PracticeProps) => {
     const [currentImpression, setCurrentImpression] = useState<Impression>();
     const [isRevealed, setIsRevealed] = useState(false);
     const [initialImpressionCount, setInitialImpressionCount] = useState(0);
+    const [sputinkSuccess, setSputnikSuccess] = useState(false);
 
     useEffect(() => {
         const lettersToPractice = cyrillicAlphabet.filter((x) =>
@@ -63,6 +64,9 @@ const Practice = ({ letters }: PracticeProps) => {
 
     const answeredCorrectly = () => {
         goToNextImpression(remainingImpressions ?? []);
+
+        setSputnikSuccess(true);
+        setTimeout(() => setSputnikSuccess(false), 150);
     };
 
     const answeredWrongly = () => {
@@ -115,6 +119,7 @@ const Practice = ({ letters }: PracticeProps) => {
                 <PracticeProgress
                     className="practice-progress"
                     percentage={percentage}
+                    success={sputinkSuccess}
                 />
                 <Card
                     className="card"

@@ -6,12 +6,17 @@ import "./PracticeProgress.scss";
 type PracticeProgressProps = {
     percentage: number;
     className?: string;
+    success: boolean;
 };
 
 const RADIUS = 168;
 const IMG_WIDTH = 36;
 
-const PracticeProgress = ({ percentage, className }: PracticeProgressProps) => {
+const PracticeProgress = ({
+    percentage,
+    className,
+    success,
+}: PracticeProgressProps) => {
     const degree = 360 * percentage + 180;
     const size = RADIUS * 2 + IMG_WIDTH;
 
@@ -28,7 +33,9 @@ const PracticeProgress = ({ percentage, className }: PracticeProgressProps) => {
         >
             <img
                 src={rocket}
-                className="rocket"
+                className={classNames("rocket", {
+                    success: success,
+                })}
                 style={{
                     width: IMG_WIDTH,
                     marginLeft: marginLeft,
