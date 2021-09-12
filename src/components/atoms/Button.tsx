@@ -7,15 +7,15 @@ type ButtonKind = "normal" | "primary";
 type ButtonProps = {
     title: string;
     onClick?: () => void;
-    cssClass?: string;
+    className?: string;
     size?: ButtonSize;
     kind?: ButtonKind;
 };
 
-const Button = ({ title, onClick, cssClass, size, kind }: ButtonProps) => (
+const Button = ({ title, onClick, className, size, kind }: ButtonProps) => (
     <button
         onClick={onClick}
-        className={classNames("button", cssClass, {
+        className={classNames("button", className, {
             large: size === "large",
             primary: kind === "primary",
         })}

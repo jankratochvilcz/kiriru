@@ -5,6 +5,7 @@ import AppHeader from "./components/organisms/AppHeader";
 import Footer from "./components/organisms/Footer";
 import Levels from "./components/pages/Levels";
 import Practice from "./components/pages/Practice";
+import Recap from "./components/pages/Recap";
 
 function App() {
     return (
@@ -25,7 +26,10 @@ function App() {
                                     />
                                 );
                             }}
-                        ></Route>
+                        />
+                        <Route path="/recap/">
+                            <Recap />
+                        </Route>
                         <Route path="/">
                             <Levels />
                         </Route>
