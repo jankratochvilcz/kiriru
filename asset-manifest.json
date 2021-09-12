@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/kiriru/static/css/main.a617e044.chunk.css",
-    "main.js": "/kiriru/static/js/main.e61be642.chunk.js",
-    "main.js.map": "/kiriru/static/js/main.e61be642.chunk.js.map",
-    "runtime-main.js": "/kiriru/static/js/runtime-main.029b6cdc.js",
-    "runtime-main.js.map": "/kiriru/static/js/runtime-main.029b6cdc.js.map",
-    "static/js/2.c100f7a5.chunk.js": "/kiriru/static/js/2.c100f7a5.chunk.js",
-    "static/js/2.c100f7a5.chunk.js.map": "/kiriru/static/js/2.c100f7a5.chunk.js.map",
-    "static/js/3.02756b4d.chunk.js": "/kiriru/static/js/3.02756b4d.chunk.js",
-    "static/js/3.02756b4d.chunk.js.map": "/kiriru/static/js/3.02756b4d.chunk.js.map",
+    "main.css": "/kiriru/static/css/main.e6224411.chunk.css",
+    "main.js": "/kiriru/static/js/main.96d4a07e.chunk.js",
+    "main.js.map": "/kiriru/static/js/main.96d4a07e.chunk.js.map",
+    "runtime-main.js": "/kiriru/static/js/runtime-main.9bfd3abc.js",
+    "runtime-main.js.map": "/kiriru/static/js/runtime-main.9bfd3abc.js.map",
+    "static/js/2.5bb632f5.chunk.js": "/kiriru/static/js/2.5bb632f5.chunk.js",
+    "static/js/2.5bb632f5.chunk.js.map": "/kiriru/static/js/2.5bb632f5.chunk.js.map",
+    "static/js/3.95e19c57.chunk.js": "/kiriru/static/js/3.95e19c57.chunk.js",
+    "static/js/3.95e19c57.chunk.js.map": "/kiriru/static/js/3.95e19c57.chunk.js.map",
     "index.html": "/kiriru/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/kiriru/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.c100f7a5.chunk.js.LICENSE.txt": "/kiriru/static/js/2.c100f7a5.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/kiriru/static/media/logo.6ce24c58.svg"
+    "static/css/main.e6224411.chunk.css.map": "/kiriru/static/css/main.e6224411.chunk.css.map",
+    "static/js/2.5bb632f5.chunk.js.LICENSE.txt": "/kiriru/static/js/2.5bb632f5.chunk.js.LICENSE.txt",
+    "static/media/noun_Astronaut_3437785.4fbff19f.svg": "/kiriru/static/media/noun_Astronaut_3437785.4fbff19f.svg",
+    "static/media/noun_Astronaut_3437987.d2377867.svg": "/kiriru/static/media/noun_Astronaut_3437987.d2377867.svg",
+    "static/media/noun_Sputnik_190534.7181f209.svg": "/kiriru/static/media/noun_Sputnik_190534.7181f209.svg",
+    "static/media/noun_dog astronaut_4119784.d469fc47.svg": "/kiriru/static/media/noun_dog astronaut_4119784.d469fc47.svg",
+    "static/media/noun_space station_2677019.cda22c5a.svg": "/kiriru/static/media/noun_space station_2677019.cda22c5a.svg",
+    "static/media/noun_spaceshuttle_1675163.1e5df0e6.svg": "/kiriru/static/media/noun_spaceshuttle_1675163.1e5df0e6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.029b6cdc.js",
-    "static/js/2.c100f7a5.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.e61be642.chunk.js"
+    "static/js/runtime-main.9bfd3abc.js",
+    "static/js/2.5bb632f5.chunk.js",
+    "static/css/main.e6224411.chunk.css",
+    "static/js/main.96d4a07e.chunk.js"
   ]
 }
