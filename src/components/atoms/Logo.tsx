@@ -1,9 +1,8 @@
+import logo from "../../assets/logo.png";
 import "./Logo.scss";
 
 const Logo = () => (
-    <div className="logo">
-        кириру
-    </div>
+    <img className="logo" src={logo} alt="Kiriru logo" />
 );
 
 export default Logo;
