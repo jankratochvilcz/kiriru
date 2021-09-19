@@ -3,21 +3,13 @@ import "./Card.scss";
 
 type CardProps = {
     text: string;
-    itallic?: boolean;
+    isTranscription?: boolean;
     className?: string;
 };
 
-const Card = ({ text, itallic, className }: CardProps) => (
-    <div
-        className={classNames(
-            "letter-card",
-            {
-                itallic: !!itallic,
-            },
-            className
-        )}
-    >
-        <span>{text}</span>
+const Card = ({ text, isTranscription, className }: CardProps) => (
+    <div className={classNames("letter-card", className)}>
+        <span>{isTranscription ? `/${text}/` : text}</span>
     </div>
 );
 

@@ -129,7 +129,7 @@ const Practice = ({ letters }: PracticeProps) => {
                             ? getHiddenStateText(currentImpression)
                             : getRevealedStateText(currentImpression)
                     }
-                    itallic={
+                    isTranscription={
                         !isRevealed
                             ? currentImpression.impressionType ===
                               "transcription"
