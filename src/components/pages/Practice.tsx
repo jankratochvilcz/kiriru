@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { shuffleArray } from "../../functions/array";
-import {
-    getInstruction,
-    getHiddenStateText,
-    getRevealedStateText,
-} from "../../functions/impression";
+import { getInstruction } from "../../functions/impression";
 import { cyrillicAlphabet } from "../../models/cyrillicAlphabet";
 import { Impression, ImpressionType } from "../../models/impression";
 import Button from "../atoms/Button";
@@ -124,18 +120,8 @@ const Practice = ({ letters }: PracticeProps) => {
                 />
                 <Card
                     className="card"
-                    text={
-                        !isRevealed
-                            ? getHiddenStateText(currentImpression)
-                            : getRevealedStateText(currentImpression)
-                    }
-                    isTranscription={
-                        !isRevealed
-                            ? currentImpression.impressionType ===
-                              "transcription"
-                            : currentImpression.impressionType !==
-                              "transcription"
-                    }
+                    impression={currentImpression}
+                    revealed={isRevealed}
                 />
             </div>
             <div className="instruction">

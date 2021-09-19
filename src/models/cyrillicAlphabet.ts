@@ -138,7 +138,7 @@ export const cyrillicAlphabet: CyrillicLetter[] = [
     },
     {
         lowerCase: "ъ",
-        transliteration: '" (hard sign)',
+        transliteration: "hard sign",
     },
     {
         lowerCase: "ы",
@@ -146,7 +146,7 @@ export const cyrillicAlphabet: CyrillicLetter[] = [
     },
     {
         lowerCase: "ь",
-        transliteration: "' (soft sign)",
+        transliteration: "soft sign",
     },
     {
         upperCase: "Э",
